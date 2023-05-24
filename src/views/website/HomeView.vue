@@ -299,7 +299,7 @@
                         class="items-center md:w-[186.19px] h-full rounded-md border-2 border-[#008067] px-4 text-sm font-medium text-[#008067] hover:bg-[#008067] hover:border-0 hover:text-white focus:outline-none">Discover
                         More</button>
                 </div>
-            </div>
+            </div>``
             <div class="flex justify-center items-center md:w-[492px] md:h-[661px] absolute md:top-[163px] md:right-[88px]">
                 <img class="w-full flex self-center md:h-full object-cover " src="@/assets/images/Rectangle 7.png" alt="">
             </div>
