@@ -1,6 +1,6 @@
 <template>
     <div
-        class="relative overflow-x-auto sm:rounded-lg -mx-4 mt-[22px] px-6 sm:-mx-6 md:mx-0 md:rounded-[13px] bg-white pt-[32px]">
+        class="relative overflow-x-auto sm:rounded-lg -mx-4 mt-[22px] px-6 sm:-mx-6 pb-6 md:mx-0 md:rounded-[13px] bg-white pt-[32px]">
 
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 ">
             <thead class="text-xs text-gray-700 uppercase bg-white dark:bg-white dark:text-gray-400">
@@ -33,7 +33,7 @@
             </thead>
             <tbody>
                 <tr v-for="(order, orderIdx) in orders" :key="order.id"
-                    class="bg-white border-b border-gray-200 px-6 hover:bg-gray-100 text-[#353535] font-light">
+                    class="bg-white border-b border-gray-200 px-6 hover:bg-gray-100 text-dark-2 font-light">
                     <th scope="row" class="py-4 text-[13px] whitespace-nowrap font-light">
                         {{ order.customerName }}
                     </th>
@@ -50,7 +50,7 @@
                         20 | <span class=" font-bold">{{ order.total }}</span>
                     </td>
 
-                    <td v-if="order.status === 'Completed'" class="py-4 text-[13px] text-[#008737]">
+                    <td v-if="order.status === 'Completed'" class="py-4 text-[13px] text-primary-2">
                         {{ order.status }}
                     </td>
                     <td v-if="order.status === 'Canceled'" class="py-4 text-[13px] text-red-400">
@@ -66,7 +66,7 @@
 
                     <td>
                         <button type="button" @click="toggleModal"
-                            class="inline-flex text-[13px] items-center border border-transparent bg-[#008737] px-4 py-1 text-sm font-normal text-white shadow-sm hover:bg-[#0F9E49] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
+                            class="inline-flex text-[13px] items-center border border-transparent bg-primary-2 px-4 py-1 text-sm font-normal text-white shadow-sm hover:bg-[#0F9E49] focus:outline-none">
                             Action
                         </button>
                     </td>

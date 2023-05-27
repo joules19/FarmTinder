@@ -5,7 +5,7 @@
                 class="relative bg-white -ml-px inline-flex items-center px-8 py-3 text-[16px] font-normal text-[#949494]">
                 {{ title0 }}</button>
             <button type="button" @click="$router.push(`${path1}`)"
-                class="relative -ml-px inline-flex items-center rounded-r-md bg-[#008737] px-12 py-3 text-[16px] font-normal text-white focus:z-10 hover:bg-[#0F9E49]">
+                class="relative -ml-px inline-flex items-center rounded-r-md bg-primary-2 px-12 py-3 text-[16px] font-normal text-white focus:z-10 hover:bg-[#0F9E49]">
                 {{ title1 }}</button>
         </span>
     </div>

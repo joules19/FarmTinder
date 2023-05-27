@@ -16,7 +16,7 @@
                 <p class="mb-2 text-xs text-[#979797]">
                     Sellers
                 </p>
-                <p class="text-[26px] font-bold text-[#353535]">
+                <p class="text-[26px] font-bold text-dark-2">
                     54
                 </p>
             </div>
@@ -38,7 +38,7 @@
                 <p class="mb-2 text-xs text-[#979797]">
                     Buyers
                 </p>
-                <p class="text-[26px] font-bold text-[#353535]">
+                <p class="text-[26px] font-bold text-dark-2">
                     2,506
                 </p>
             </div>
@@ -68,7 +68,7 @@
                 <p class="mb-2 text-xs text-[#979797]">
                     Products
                 </p>
-                <p class="text-[26px] font-bold text-[#353535]">
+                <p class="text-[26px] font-bold text-dark-2">
                     1,200
                 </p>
             </div>
@@ -76,7 +76,7 @@
         <div class="flex flex-col p-4 md:h-[174px] md:w-[315px] bg-white rounded-[13px] shadow-xs justify-between">
             <div class="grid justify-items-stretch">
                 <div
-                    class="justify-self-start p-[10px] rounded-full bg-gradient-to-r from-[#00491E] to-[#008737] text-white">
+                    class="justify-self-start p-[10px] rounded-full bg-gradient-to-r from-[#00491E] to-primary-2 text-white">
                     <svg xmlns=" http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-[23.5px] h-[23.5px]">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -99,7 +99,7 @@
                         </p>
                     </div>
                 </div>
-                <p class="text-[26px] font-bold text-[#353535]">
+                <p class="text-[26px] font-bold text-dark-2">
                     <small class="text-[14px] font-bold">₦</small> 20,054,375.04
                 </p>
             </div>

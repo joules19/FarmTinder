@@ -1,16 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import { CreateProduct, OrderView, ProductDetails, ProductView, UserView, DashboardView } from "@/views/admin/index";
 import { WebsiteLayout, AdminLayout } from '@/views/layout/index';
-import HomeView from '@/views/website/HomeView.vue';
+import { ShopView, HomeView, ProductsView } from '@/views/website/index';
+//import VueBodyClass from 'vue-body-class';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-
-      name: "Admin",
+      name: "admin",
       path: "/admin",
       component: AdminLayout,
+      meta: { bod: 'bg-primary-1' },
       redirect: '/dashboard',
       children: [
 
@@ -27,7 +28,7 @@ const router = createRouter({
         },
 
         {
-          path: 'admin/products/create-product',
+          path: '/admin/products/create-product',
           name: 'CreateProduct',
           component: CreateProduct,
         },
@@ -37,7 +38,6 @@ const router = createRouter({
           component: ProductDetails,
           name: "ProductDetails",
           props: true,
-          meta: { requiresAuth: true },
         },
 
         {
@@ -67,11 +67,24 @@ const router = createRouter({
           name: 'home',
           component: HomeView,
         },
+        {
+          path: '/shop',
+          name: 'shop',
+          component: ShopView,
+        },
+        {
+          path: '/product/:productId',
+          name: 'product',
+          component: ProductsView,
+        },
 
       ]
     },
 
-  ]
+  ],
+
+
 })
+
 
 export default router

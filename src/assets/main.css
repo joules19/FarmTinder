@@ -7,3 +7,11 @@ body {
   /* background-color: #f4f4f4; */
   font-family: 'Montserrat', sans-serif !important;
 }
+
+body.home {
+  background: red;
+}
+
+body.intro {
+  background: pink;
+}

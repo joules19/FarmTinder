@@ -1,23 +1,21 @@
 <template lang="">
    <div class="w-[513px] h-[55px] flex flex-cols  gap-[2px]">
             <div class="bg-white w-[50.5px] rounded-l-[3px] flex flex-row items-center justify-center">
-                <div class="text-[#353535]">
+                <div class="text-dark-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-[26px] h-[26px]">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 01-.659 1.591l-5.432 5.432a2.25 2.25 0 00-.659 1.591v2.927a2.25 2.25 0 01-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 00-.659-1.591L3.659 7.409A2.25 2.25 0 013 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0112 3z" />
                     </svg>
                 </div>
-
             </div>
 
             <div class="bg-white w-[101px] flex flex-row items-center justify-center">
-                <p class="text-[#353535] text-sm font-normal">Filter by</p>
-
+                <p class="text-dark-2 text-sm font-normal">Filter by</p>
             </div>
 
             <div class="bg-white w-[101px] flex justify-center items-center space-x-1">
-                <p class="text-[#353535] text-sm font-normal">Status</p>
+                <p class="text-dark-2 text-sm font-normal">Status</p>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
@@ -25,7 +23,7 @@
             </div>
 
             <div class="bg-white w-[101px] flex justify-center items-center space-x-1">
-                <p class="text-[#353535] text-sm font-normal">Date</p>
+                <p class="text-dark-2 text-sm font-normal">Date</p>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 9L12 15L18 9" stroke="black" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />

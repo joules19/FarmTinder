@@ -159,7 +159,7 @@
                                                                 ₦ 2,000.00 x 2</p>
                                                         </div>
                                                         <div class="h-4  flex items-center">
-                                                            <p class="text-[#008067] font-semibold text-[12px]">
+                                                            <p class="text-primary-1 font-semibold text-[12px]">
                                                                 ₦ 4,000.00</p>
                                                         </div>
                                                     </div>
@@ -181,7 +181,7 @@
                                                                 ₦ 2,000.00 x 2</p>
                                                         </div>
                                                         <div class="h-4 flex items-center">
-                                                            <p class="text-[#008067] font-semibold text-[12px]">
+                                                            <p class="text-primary-1 font-semibold text-[12px]">
                                                                 ₦ 4,000.00</p>
                                                         </div>
                                                     </div>
@@ -250,7 +250,7 @@
 
                                 <div class="h-[55px] flex items-center justify-center">
                                     <button type="button"
-                                        class="inline-flex w-[301px] h-full justify-center items-center rounded-md border border-transparent bg-[#008737] px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-[#008737] focus:outline-none sm:text-sm"
+                                        class="inline-flex w-[301px] h-full justify-center items-center rounded-md border border-transparent bg-primary-2 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-primary-2 focus:outline-none sm:text-sm"
                                         @click="isModalOpen = false">Done</button>
 
                                 </div>

@@ -27,7 +27,7 @@
                     <p class="mb-2 text-xs text-[#979797]">
                         All
                     </p>
-                    <p class="text-[26px] font-bold text-[#353535]">
+                    <p class="text-[26px] font-bold text-dark-2">
                         {{val1.toLocaleString()}}
                     </p>
                 </div>
@@ -35,7 +35,7 @@
                     <p class="mb-2 text-xs text-[#979797]">
                         Active
                     </p>
-                    <p class="text-[26px] font-bold text-[#353535]">
+                    <p class="text-[26px] font-bold text-dark-2">
                         {{val2.toLocaleString()}}
 
                     </p>
@@ -44,7 +44,7 @@
                     <p class="mb-2 text-xs text-[#979797]">
                         Inactive
                     </p>
-                    <p class="text-[26px] font-bold text-[#353535]">
+                    <p class="text-[26px] font-bold text-dark-2">
                         {{val3.toLocaleString()}}
 
                     </p>

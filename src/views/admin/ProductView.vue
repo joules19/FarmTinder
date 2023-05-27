@@ -29,7 +29,7 @@
         <DFilterPanel />
 
         <div class="h-[55px] flex justify-center items-center">
-            <DRoundButton path="/products/create-product" title="Create Product" />
+            <DRoundButton path="products/create-product" title="Create Product" />
 
         </div>
     </div>

@@ -1,5 +1,6 @@
 <template>
-    <div class="">
+    <!--SWITCHING THE ADMIN BACKGROND TO GRAY FROM THE WEBSITES WHITE  -->
+    <div class="bg-gray-3 pb-56">
         <TransitionRoot as="template" :show="sidebarOpen">
             <Dialog as="div" class="relative z-40 md:hidden" @close="sidebarOpen = false">
                 <TransitionChild as="template" enter="transition-opacity ease-linear duration-300" enter-from="opacity-0"
@@ -53,7 +54,8 @@
         <div class="flex flex-1 flex-col ">
             <div class="sticky top-0 z-10 flex h-[72px] flex-shrink-0 bg-white pl-[46px] pr-[37px]">
                 <div class="flex items-center justify-between">
-                    <img src="@/assets/images/agro logos_k.png" class="w-[147px] h-[27px]" alt="agro logos">
+                    <router-link to="/admin"> <img src="@/assets/images/agro logos_k.png" class="w-[147px] h-[27px]"
+                            alt="agro logos"></router-link>
                 </div>
                 <button type="button"
                     class="border-r border-gray-200 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
@@ -136,7 +138,7 @@
                     <nav class="flex-1 space-y-1 pb-2">
                         <RouterLink v-for="(item, itemIdx) in navigation" :key="item.name" :to="item.href"
                             class="flex flex-row py-1" @click="setActive(itemIdx)">
-                            <div :class="[item.current ? 'bg-[#00491E] text-white' : 'bg-gray-100 text-gray-400',
+                            <div :class="[item.current ? 'bg-primary-4 text-white' : 'bg-gray-100 text-gray-400',
                                 'flex items-center w-[32px] h-[32px] justify-center rounded-xl']">
                                 <component :is="item.icon" class="w-[18px] h-[18px]" />
                             </div>
@@ -182,7 +184,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, } from 'vue'
 import {
     Dialog,
     DialogPanel,
@@ -205,10 +207,10 @@ import {
 //import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
 
 const navigation = ref([
-    { name: 'Dashboard', href: '/', icon: HomeIcon, current: true, },
-    { name: 'Products', href: '/products', icon: GiftIcon, current: false },
-    { name: 'Orders', href: '/orders', icon: ShoppingCartIcon, current: false },
-    { name: 'Users', href: '/users', icon: UsersIcon, current: false },
+    { name: 'Dashboard', href: '/admin', icon: HomeIcon, current: true, },
+    { name: 'Products', href: '/admin/products', icon: GiftIcon, current: false },
+    { name: 'Orders', href: '/admin/orders', icon: ShoppingCartIcon, current: false },
+    { name: 'Users', href: '/admin/users', icon: UsersIcon, current: false },
 ])
 
 const userNavigation = [
@@ -226,4 +228,13 @@ const setActive = (ind: number) => {
 
 
 const sidebarOpen = ref(false)
+
+
+
 </script>
+
+<style>
+.body {
+    background-color: #abb6d6 !important;
+}
+</style>
