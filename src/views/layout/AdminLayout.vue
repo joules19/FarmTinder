@@ -29,8 +29,6 @@
                             </TransitionChild>
 
                             <div class="mt-5 h-0 flex-1 overflow-y-auto">
-
-
                                 <nav class="space-y-1 px-2">
                                     <a v-for="item in navigation" :key="item.name" :href="item.href"
                                         :class="[item.current ? 'bg-gray-100 text-gray-900' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900', 'group flex items-center px-2 py-2 text-base font-medium rounded-md']">
@@ -41,6 +39,7 @@
                                     </a>
                                 </nav>
                             </div>
+
                         </DialogPanel>
                     </TransitionChild>
                     <div class="w-14 flex-shrink-0" aria-hidden="true">
@@ -109,7 +108,9 @@
                 <div class="max-w-7xl">
                     <!-- Replace with your content -->
                     <div class="">
-                        <RouterView />
+                        <router-view>
+
+                        </router-view>
                     </div>
                     <!-- /End replace -->
                 </div>
@@ -236,5 +237,13 @@ const sidebarOpen = ref(false)
 <style>
 .body {
     background-color: #abb6d6 !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
 }
 </style>
